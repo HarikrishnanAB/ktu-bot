@@ -1,0 +1,30 @@
+/* File: src/components/MessageBubble/MessageBubble.scss */
+.message-bubble {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+.message-bubble p {
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.user {
+  align-self: flex-end;
+}
+
+.bot {
+  align-self: flex-start;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}

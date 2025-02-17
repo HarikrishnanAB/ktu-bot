@@ -1,0 +1,11 @@
+/* File: src/App.scss */
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  /* Optionally constrain max width if needed: */
+  max-width: 1200px;
+  margin: 0 auto;
+}

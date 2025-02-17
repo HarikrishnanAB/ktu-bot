@@ -1,0 +1,31 @@
+
+/* File: src/components/InputArea/InputArea.scss */
+.input-area {
+  width: 100%;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.input-area textarea {
+  flex: 1;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-height: 50px;
+}
+
+.input-area button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #0084ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
