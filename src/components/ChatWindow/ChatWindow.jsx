@@ -1,4 +1,5 @@
-// File: src/components/ChatWindow/ChatWindow.jsx
+
+ // File: src/components/ChatWindow/ChatWindow.jsx
 import React, { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import MessageBubble from "../MessageBubble/MessageBubble";
