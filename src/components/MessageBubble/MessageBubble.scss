@@ -1,35 +1,45 @@
+/* File: src/components/MessageBubble/MessageBubble.scss */
 .message-bubble {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 10px;
-  max-width: 60%;
+  align-items: center;
+  margin-bottom: 12px;
+  max-width: 80%;
 }
 
-/* Styling for the message text */
+/* The text bubble styling */
 .message-text {
   background: #e0e0e0;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 8px;
   font-size: 16px;
   line-height: 1.5;
   word-break: break-word;
 }
 
-/* Bot messages: avatar on left, text on right */
-.message-bubble.bot {
-  flex-direction: row;
+/* For bot messages: avatar on left, text on right */
+.bot {
   align-self: flex-start;
+  flex-direction: row;
 }
 
-/* User messages: avatar on right, text on left */
-.message-bubble.user {
-  flex-direction: row-reverse;
+/* For user messages: avatar on right, text on left */
+.user {
   align-self: flex-end;
+  flex-direction: row-reverse;
 }
 
+/* Updated avatar styling for a more professional look */
 .avatar {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  object-fit: cover;
   margin: 0 10px;
+  border: 2px solid #0084ff; /* Default border for a professional look */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Optionally differentiate the border for bot messages */
+.bot .avatar {
+  border-color: #ff4500;
 }

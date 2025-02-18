@@ -1,15 +1,17 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 .header {
   width: 100%;
-  height: 70px;  /* Increased height for a more spacious header */
+  height: 100px; /* Increased height for extra space */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
-  background-color: #202123; /* Dark background similar to ChatGPT */
+  background-color: #202123;  /* Dark header background */
   color: white;
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 
 .header__logo {
@@ -20,13 +22,24 @@
 .logo {
   width: 50px;
   height: 50px;
-  border-radius: 50%; /* Makes the logo round */
+  border-radius: 50%;  /* Round logo */
   margin-right: 15px;
 }
 
-.header__logo h1 {
+.header__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__text h1 {
   font-size: 1.8rem;
   margin: 0;
+}
+
+.header__quote {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.8;
 }
 
 .header__nav ul {

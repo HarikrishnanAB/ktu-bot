@@ -1,12 +1,12 @@
-
 /* File: src/components/InputArea/InputArea.scss */
 .input-area {
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 30px;  /* Same horizontal padding as header and chat window */
   background: #ffffff;
   border-top: 1px solid #ccc;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .input-area textarea {

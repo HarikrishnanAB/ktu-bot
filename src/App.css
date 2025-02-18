@@ -1,9 +1,11 @@
+/* File: src/App.scss */
 .app-container {
   width: 100vw;
+  max-width: 1200px;  /* This sets a common maximum width */
   height: 100vh;
   display: flex;
   flex-direction: column;
   background: #fff;
-  max-width: 1200px; /* Match header width */
-  margin: 0 auto;
+  margin: 0 auto; /* Center the container horizontally */
+  box-sizing: border-box;
 }
