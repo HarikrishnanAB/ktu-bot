@@ -1,30 +1,35 @@
-/* File: src/components/MessageBubble/MessageBubble.scss */
 .message-bubble {
   display: flex;
   align-items: flex-start;
   margin-bottom: 10px;
-  max-width: 80%;
+  max-width: 60%;
 }
 
-.message-bubble p {
+/* Styling for the message text */
+.message-text {
   background: #e0e0e0;
   padding: 10px;
   border-radius: 8px;
   font-size: 16px;
   line-height: 1.5;
+  word-break: break-word;
 }
 
-.user {
-  align-self: flex-end;
-}
-
-.bot {
+/* Bot messages: avatar on left, text on right */
+.message-bubble.bot {
+  flex-direction: row;
   align-self: flex-start;
+}
+
+/* User messages: avatar on right, text on left */
+.message-bubble.user {
+  flex-direction: row-reverse;
+  align-self: flex-end;
 }
 
 .avatar {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
   border-radius: 50%;
+  margin: 0 10px;
 }

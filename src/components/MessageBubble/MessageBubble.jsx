@@ -1,4 +1,3 @@
-// File: src/components/MessageBubble/MessageBubble.jsx
 import React from "react";
 import userLogo from "../../assets/userLogo.png";
 import botLogo from "../../assets/botLogo.png";
@@ -12,7 +11,7 @@ const MessageBubble = ({ sender, text }) => {
         alt="Avatar"
         className="avatar"
       />
-      <p>{text}</p>
+      <p className="message-text">{text}</p>
     </div>
   );
 };
